@@ -14,4 +14,3 @@ class Solution:
             left+=1  #after shrinking move left pointer forward
             min_sum=min(min_sum,win_sum)  #update min value
         return total_sum-min_sum 
-      
