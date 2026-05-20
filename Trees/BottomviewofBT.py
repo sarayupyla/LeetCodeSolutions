@@ -7,7 +7,7 @@
 
 class Solution:
     def bottomView(self, root):
-        #your code goes here
+        #your code goes here # we traverse using vertical order traversal and we keep updating the value of the node
         if not root:
             return [] 
         dict={}

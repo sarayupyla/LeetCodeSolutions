@@ -6,6 +6,7 @@
 #         self.right = right
 class Solution:
     def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
+        # we traverse using level order traversal
         ans=[]
         def dfs(node,level):
             if not node:

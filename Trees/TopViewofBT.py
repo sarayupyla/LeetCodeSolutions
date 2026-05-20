@@ -7,7 +7,7 @@
 
 class Solution:
     def topView(self, root):
-        #your code goes here
+        #your code goes here #we traverse using vertical order traversal 
         if not root:
             return []
         dic = {}
