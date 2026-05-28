@@ -3,8 +3,8 @@ class Solution:
         ml=0
         l=0
         f=0
-        for r in range(len(answerKey)):
-            if answerKey[r]=='F':
+        for r in range(len(answerKey)): #for all false to change to true 
+            if answerKey[r]=='F': 
                     f+=1
             while f>k:
                 if answerKey[l]=='F':
@@ -13,7 +13,7 @@ class Solution:
             ml=max(ml,r-l+1)
         l=0
         t=0
-        for r in range(len(answerKey)):
+        for r in range(len(answerKey)): #for all true to change to false 
             if answerKey[r]=='T':
                     t+=1
             while t>k:
@@ -21,5 +21,5 @@ class Solution:
                     t-=1
                 l+=1
             ml=max(ml,r-l+1)
-        return ml
+        return ml #check max length of both cases and return the max of them
         
